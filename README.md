@@ -1,3 +1,11 @@
+**NOTE:**
+- Dependencies from [the original repository](https://github.com/cmharlow/lc-reconcile) are updated to make it is possible to run the reconciliation service with python 3.14 and the latest python libraries
+- The default port the service is listening on is changed to 5001 to it does not conflict with AirPlay Receiver service which is listening on port 5000 starting with macOS Monterey. It is also possible to specify custom port to listen on using `--port` option:
+    ```shell
+    python reconcile.py --port 8000
+    ```
+
+---
 # Library of Congress OpenRefine Reconciliation Service Endpoint
 
 ## About
